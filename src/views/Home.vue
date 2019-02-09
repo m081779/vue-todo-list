@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div class="todo-container">
 		<AddTodo v-on:add-todo="addTodo"/>
 		<Todos v-bind:todos="todos" v-on:del-todo="deleteTodo"/>
 	</div>
@@ -68,5 +68,10 @@
 
 	.btn:hover {
 		background: #666;
+	}
+	
+	.todo-container {
+		width: 50%;
+		margin: 0 auto;
 	}
 </style>
